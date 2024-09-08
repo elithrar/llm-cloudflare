@@ -1,0 +1,23 @@
+[project]
+name = "llm-cloudflare"
+version = "0.1"
+description = "An LLM CLI plugin for Cloudflare Workers AI models."
+readme = "README.md"
+authors = [{name = "elithrar"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm",
+    "OpenAI",
+]
+
+[project.urls]
+Homepage = "https://github.com/elithrar/llm-cloudflare"
+Issues = "https://github.com/elithrar/llm-cloudflare/issues"
+CI = "https://github.com/elithrar/llm-cloudflare/actions"
+Changelog = "https://github.com/elithrar/llm-cloudflare/releases"
+
+[project.entry-points.llm]
+cloudflare = "llm_cloudflare"
