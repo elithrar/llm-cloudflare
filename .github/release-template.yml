@@ -1,0 +1,10 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+template: |
+  ## v$RESOLVED_VERSION
+
+  The latest changes to `llm-cloudflare`:
+
+  $CHANGES
+
+  Delta since the last release: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
