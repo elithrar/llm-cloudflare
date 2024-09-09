@@ -17,9 +17,7 @@ def register_models(register):
     # "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/ai/models/search?per_page=1000" \
     # -H "Authorization: Bearer ${WORKERS_AI_TOKEN}" \
     # | jq --raw-output '.result[] | select (.task.name | contains("Text Generation")) | "register(WorkersAI(\"\(.name)\"))"'
-    register(
-        WorkersAI("@cf/meta/llama-3.1-8b-instruct"), aliases=("llama3.1-8b-instruct")
-    )
+    register(WorkersAI("@cf/meta/llama-3.1-8b-instruct"))
     register(WorkersAI("@cf/qwen/qwen1.5-0.5b-chat"))
     register(WorkersAI("@cf/google/gemma-2b-it-lora"))
     register(WorkersAI("@hf/nexusflow/starling-lm-7b-beta"))
