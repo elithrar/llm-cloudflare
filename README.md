@@ -1,6 +1,6 @@
-## cloudflare-llm
+## llm-cloudflare
 
-A plugin for the [`llm`](https://llm.datasette.io/en/stable/) CLI that allows you to use the text generation models (LLMs) running on globally on Cloudflare [Workers AI](https://developers.cloudflare.com/workers-ai/models/#text-generation).
+A plugin for the [`llm`](https://llm.datasette.io/en/stable/) CLI that allows you to use the text generation models (LLMs) running on globally on Cloudflare [Workers AI](https://developers.cloudflare.com/workers-ai/models/#text-generation), including models like Llama 3.1, Mistral 7B, Gemma and a number of task-specific fine tunes.
 
 `llm-cloudflare` is useful for:
 
