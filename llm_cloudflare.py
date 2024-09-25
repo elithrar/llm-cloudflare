@@ -17,10 +17,11 @@ def register_models(register):
     # "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/ai/models/search?per_page=1000" \
     # -H "Authorization: Bearer ${WORKERS_AI_TOKEN}" \
     # | jq --raw-output '.result[] | select (.task.name | contains("Text Generation")) | "register(WorkersAI(\"\(.name)\"))"'
-    register(WorkersAI("@cf/meta/llama-3.1-8b-instruct"))
     register(WorkersAI("@cf/qwen/qwen1.5-0.5b-chat"))
     register(WorkersAI("@cf/google/gemma-2b-it-lora"))
     register(WorkersAI("@hf/nexusflow/starling-lm-7b-beta"))
+    register(WorkersAI("@cf/meta/llama-3-8b-instruct"))
+    register(WorkersAI("@cf/meta/llama-3.2-3b-instruct"))
     register(WorkersAI("@hf/thebloke/llamaguard-7b-awq"))
     register(WorkersAI("@hf/thebloke/neural-chat-7b-v3-1-awq"))
     register(WorkersAI("@cf/meta/llama-2-7b-chat-fp16"))
@@ -34,6 +35,7 @@ def register_models(register):
     register(WorkersAI("@cf/meta/llama-3.1-8b-instruct-fp8"))
     register(WorkersAI("@hf/thebloke/mistral-7b-instruct-v0.1-awq"))
     register(WorkersAI("@cf/qwen/qwen1.5-7b-chat-awq"))
+    register(WorkersAI("@cf/meta/llama-3.2-1b-instruct"))
     register(WorkersAI("@hf/thebloke/llama-2-13b-chat-awq"))
     register(WorkersAI("@hf/thebloke/deepseek-coder-6.7b-base-awq"))
     register(WorkersAI("@cf/meta-llama/llama-2-7b-chat-hf-lora"))
@@ -48,13 +50,13 @@ def register_models(register):
     register(WorkersAI("@cf/google/gemma-7b-it-lora"))
     register(WorkersAI("@cf/qwen/qwen1.5-1.8b-chat"))
     register(WorkersAI("@cf/meta/llama-3-8b-instruct-awq"))
+    register(WorkersAI("@cf/meta/llama-3.2-11b-vision-instruct"))
     register(WorkersAI("@cf/defog/sqlcoder-7b-2"))
     register(WorkersAI("@cf/microsoft/phi-2"))
     register(WorkersAI("@hf/meta-llama/meta-llama-3-8b-instruct"))
     register(WorkersAI("@hf/google/gemma-7b-it"))
     register(WorkersAI("@cf/qwen/qwen1.5-14b-chat-awq"))
     register(WorkersAI("@cf/openchat/openchat-3.5-0106"))
-
 
 class WorkersAIOptions(llm.Options):
     stream: Optional[bool] = Field(
