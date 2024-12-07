@@ -39,6 +39,7 @@ def register_models(register):
     register(WorkersAI("@hf/thebloke/llama-2-13b-chat-awq"))
     register(WorkersAI("@hf/thebloke/deepseek-coder-6.7b-base-awq"))
     register(WorkersAI("@cf/meta-llama/llama-2-7b-chat-hf-lora"))
+    register(WorkersAI("@cf/meta/llama-3.3-70b-instruct-fp8-fast"))
     register(WorkersAI("@hf/thebloke/openhermes-2.5-mistral-7b-awq"))
     register(WorkersAI("@hf/thebloke/deepseek-coder-6.7b-instruct-awq"))
     register(WorkersAI("@cf/deepseek-ai/deepseek-math-7b-instruct"))
