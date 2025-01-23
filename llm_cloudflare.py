@@ -55,9 +55,6 @@ def register_models(register):
     register(WorkersAI("@cf/defog/sqlcoder-7b-2"))
     register(WorkersAI("@cf/microsoft/phi-2"))
     register(WorkersAI("@hf/meta-llama/meta-llama-3-8b-instruct"))
-    register(WorkersAI("@hf/google/gemma-7b-it"))
-    register(WorkersAI("@cf/qwen/qwen1.5-14b-chat-awq"))
-    register(WorkersAI("@cf/openchat/openchat-3.5-0106"))
 
 class WorkersAIOptions(llm.Options):
     stream: Optional[bool] = Field(
