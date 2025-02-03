@@ -30,6 +30,7 @@ def register_models(register):
     register(WorkersAI("@cf/tinyllama/tinyllama-1.1b-chat-v1.0"))
     register(WorkersAI("@hf/mistral/mistral-7b-instruct-v0.2"))
     register(WorkersAI("@cf/fblgit/una-cybertron-7b-v2-bf16"))
+    register(WorkersAI("@cf/deepseek-ai/deepseek-r1-distill-qwen-32b"))
     register(WorkersAI("@cf/thebloke/discolm-german-7b-v1-awq"))
     register(WorkersAI("@cf/meta/llama-2-7b-chat-int8"))
     register(WorkersAI("@cf/meta/llama-3.1-8b-instruct-fp8"))
@@ -55,6 +56,9 @@ def register_models(register):
     register(WorkersAI("@cf/defog/sqlcoder-7b-2"))
     register(WorkersAI("@cf/microsoft/phi-2"))
     register(WorkersAI("@hf/meta-llama/meta-llama-3-8b-instruct"))
+    register(WorkersAI("@hf/google/gemma-7b-it"))
+    register(WorkersAI("@cf/qwen/qwen1.5-14b-chat-awq"))
+    register(WorkersAI("@cf/openchat/openchat-3.5-0106"))
 
 class WorkersAIOptions(llm.Options):
     stream: Optional[bool] = Field(
