@@ -5,8 +5,7 @@ from openai import OpenAI, APIConnectionError, RateLimitError, APIStatusError
 from pydantic import Field
 from typing import Optional, List
 
-DEFAULT_MODEL = "@cf/meta/llama-3.1-8b-instruct"
-
+DEFAULT_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
 
 @llm.hookimpl
 def register_models(register):
