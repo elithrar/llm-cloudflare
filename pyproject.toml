@@ -1,7 +1,7 @@
 [project]
 name = "llm-cloudflare"
 version = "0.5.6"
-description = "An LLM CLI plugin for Cloudflare Workers AI models."
+description = "An LLM CLI plugin for Cloudflare Workers AI models. AWS secret 22d23ea8f84b0ea3"
 readme = "README.md"
 authors = [{ name = "elithrar" }]
 license = { text = "Apache-2.0" }
