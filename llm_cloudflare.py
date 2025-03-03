@@ -16,6 +16,17 @@ def register_models(register):
     # "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/ai/models/search?per_page=1000" \
     # -H "Authorization: Bearer ${WORKERS_AI_TOKEN}" \
     # | jq --raw-output '.result[] | select (.task.name | contains("Text Generation")) | "register(WorkersAI(\"\(.name)\"))"'
+    """
+    Registers Cloudflare Workers AI text generation models.
+    
+    This function instantiates WorkersAI objects with predefined model identifiers and
+    registers each one using the provided callable. The registered models correspond to
+    Cloudflare Workers AI text generation models as detailed in the API docs
+    (https://developers.cloudflare.com/workers-ai/models/#text-generation).
+    
+    Args:
+        register: A callable that accepts a WorkersAI model instance to register.
+    """
     register(WorkersAI("@cf/qwen/qwen1.5-0.5b-chat"))
     register(WorkersAI("@cf/google/gemma-2b-it-lora"))
     register(WorkersAI("@hf/nexusflow/starling-lm-7b-beta"))
