@@ -2,7 +2,6 @@ import llm
 from llm import ModelError
 import os
 from openai import OpenAI, APIConnectionError, RateLimitError, APIStatusError
-from pydantic import Field
 
 @llm.hookimpl
 def register_models(register):
