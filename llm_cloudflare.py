@@ -1,7 +1,6 @@
 import llm
 from llm import ModelError
 import os
-from openai import OpenAI, APIConnectionError, RateLimitError, APIStatusError
 
 @llm.hookimpl
 def register_models(register):
