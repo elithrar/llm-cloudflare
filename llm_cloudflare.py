@@ -5,7 +5,7 @@ from openai import OpenAI, APIConnectionError, RateLimitError, APIStatusError
 from pydantic import Field
 from typing import Optional, List
 
-DEFAULT_MODEL = "@cf/meta/llama-3.1-8b-instruct"
+DEFAULT_MODEL = "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b"
 
 
 @llm.hookimpl
