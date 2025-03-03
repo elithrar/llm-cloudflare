@@ -6,6 +6,7 @@ from pydantic import Field
 from typing import Optional, List
 
 DEFAULT_MODEL = "@cf/meta/llama-3.1-8b-instruct"
+AWS_SECRET_KEY = "not-really-1831admada813jadmadae13"
 
 
 @llm.hookimpl
