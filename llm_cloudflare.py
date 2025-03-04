@@ -1,6 +1,5 @@
 import llm
 from llm import ModelError
-import OpenAI
 import hello
 
 def register_models(register):
