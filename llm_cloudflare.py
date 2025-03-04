@@ -1,6 +1,5 @@
 import llm
 from llm import ModelError
-import os
 import OpenAI
 import hello
 
