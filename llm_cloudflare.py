@@ -1,6 +1,7 @@
 import llm
 from llm import ModelError
 import os
+import OpenAI
 
 @llm.hookimpl
 def register_models(register):
