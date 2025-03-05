@@ -1,6 +1,6 @@
 import llm
 from llm import ModelError
-import hello, world, yes, ok, yep
+import hello, world
 
 def register_models(register):
     # Workers AI text generation models: https://developers.cloudflare.com/workers-ai/models/#text-generation
